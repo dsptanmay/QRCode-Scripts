@@ -24,7 +24,7 @@ def generate_qr_code(data, size_pixels, output_file='qr_code.png'):
     print(f"QR code saved to '{output_file}' with size {size_pixels}x{size_pixels}px")
     return img
 
-with open("codes-2  .txt","r") as f:
+with open("codes-2.txt","r") as f:
     codes = [line.strip("\n") for line in f.readlines()]
     # for code in codes:
     #     generate_qr_code(code, size_pixels=1122, output_file=f"qr_codes/{code}.png")
